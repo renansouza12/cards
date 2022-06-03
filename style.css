@@ -6,3 +6,43 @@
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
+
+:root {
+    --background-color: #14213d;
+    --white-color: #fff;
+    --h3-color: #212529:
+}
+
+body {
+    background: var(--background-color);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .cards {
+    display: flex;
+    height: 300px;
+    width: 200px;
+    border-radius: 0.5rem;
+    background: var(--white-color);
+    position: relative;
+}
+
+.cards .informations {
+    position: absolute;
+    bottom: 6rem;
+    left: 1rem;
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+.cards img {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
