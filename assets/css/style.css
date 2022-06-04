@@ -10,7 +10,12 @@
 :root {
     --background-color: #14213d;
     --white-color: #fff;
-    --h3-color: #212529:
+    --h3-color: #212529;
+    --span-color: #343a40;
+}
+
+::selection {
+    background: #adb5bd;
 }
 
 body {
@@ -74,6 +79,13 @@ video {
 .card.one:hover .card-content {
     opacity: 1;
     transition: 0.5s ease;
+}
+
+.card .card-content span {
+    color: var(--span-color);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 .card.one img {
