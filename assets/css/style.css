@@ -47,11 +47,37 @@ video {
     height: 300px;
     width: 200px;
     margin: 0 3rem;
-    border-radius: 0.5rem;
+    border-radius: 0.6rem;
 }
 
-.card:hover {
+.card:hover .image {
     transition: 0.3s ease all;
-    background: transparent;
-    filter: blur(2px);
+    filter: blur(1px);
+}
+
+.card.one {
+    position: relative;
+}
+
+.card.one .card-content {
+    position: absolute;
+    opacity: 0;
+    margin-left: 0;
+    margin-right: 0;
+    left: 0;
+    right: 0;
+    bottom: 30%;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.card.one:hover .card-content {
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.card.one img {
+    position: absolute;
+    width: 100%;
+    border-radius: 0.5rem;
 }
