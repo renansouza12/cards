@@ -50,6 +50,8 @@ video {
     border-radius: 0.5rem;
 }
 
-.card .one {
-    position: relative;
+.card:hover {
+    transition: 0.3s ease all;
+    background: transparent;
+    filter: blur(2px);
 }
