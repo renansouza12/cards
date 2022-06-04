@@ -12,10 +12,13 @@
     --white-color: #fff;
     --h3-color: #212529;
     --span-color: #343a40;
+    --border-radius: 0.5rem;
+    --width: 100%;
+    --height: 300px;
 }
 
 ::selection {
-    background: #adb5bd;
+    user-select: none;
 }
 
 body {
@@ -44,11 +47,6 @@ video {
 }
 
 .card {
-    background: rgba( 2, 2, 2, 0.1);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 1, 0.20);
-    backdrop-filter: blur( 3px);
-    -webkit-backdrop-filter: blur( 3px);
-    border: 1px solid rgba( 255, 255, 255, 0.18);
     height: 300px;
     width: 200px;
     margin: 0 3rem;
@@ -58,6 +56,13 @@ video {
 .card:hover .image {
     transition: 0.3s ease all;
     filter: blur(1px);
+}
+
+.card .card-content span {
+    color: var(--span-color);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    font-weight: bold;
 }
 
 .card.one {
@@ -81,15 +86,37 @@ video {
     transition: 0.5s ease;
 }
 
-.card .card-content span {
-    color: var(--span-color);
-    font-size: 1.2rem;
-    letter-spacing: 2px;
-    font-weight: bold;
-}
-
 .card.one img {
     position: absolute;
-    width: 100%;
-    border-radius: 0.5rem;
+    width: var(--width);
+    height: var(--height);
+    border-radius: var(--border-radius);
+}
+
+.card.two {
+    position: relative;
+}
+
+.card.two img {
+    position: absolute;
+    width: var(--width);
+    height: var(--height);
+    border-radius: var(--border-radius);
+}
+
+.card.two .card-content {
+    position: absolute;
+    opacity: 0;
+    margin-left: 0;
+    margin-right: 0;
+    left: 0;
+    right: 0;
+    bottom: 30%;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.card.two:hover .card-content {
+    opacity: 1;
+    transition: 0.5s ease;
 }
