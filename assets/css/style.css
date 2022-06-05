@@ -44,6 +44,7 @@ video {
 .cards {
     display: flex;
     flex-wrap: wrap;
+    cursor: pointer;
 }
 
 .card {
@@ -117,6 +118,34 @@ video {
 }
 
 .card.two:hover .card-content {
+    opacity: 1;
+    transition: 0.5s ease;
+}
+
+.card.three {
+    position: relative;
+}
+
+.card.three img {
+    position: absolute;
+    width: var(--width);
+    height: var(--height);
+    border-radius: var(--border-radius);
+}
+
+.card.three .card-content {
+    position: absolute;
+    opacity: 0;
+    margin-left: 0;
+    margin-right: 0;
+    left: 0;
+    right: 0;
+    bottom: 30%;
+    text-align: center;
+    color: var(--white-color);
+}
+
+.card.three:hover .card-content {
     opacity: 1;
     transition: 0.5s ease;
 }
