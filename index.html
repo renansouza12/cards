@@ -7,15 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+
     <title>Document</title>
 </head>
 
 <body>
 
     <div class="container">
-        <video src="./assets/video/video-city.mp4" autoplay muted loop></video>
+
         <div class="cards">
-            <div class="card one">
+            <div class="card one" data-tilt>
                 <img class="image" src="./assets/img/photo-1.jpg" alt="Canada">
                 <div class="card-content">
                     <span>Travel</span>
@@ -23,7 +24,7 @@
                 </div>
 
             </div>
-            <div class="card two">
+            <div class="card two" data-tilt>
                 <img class="image" src="./assets/img/photo-2.jpg" alt="EUA">
 
                 <div class="card-content">
@@ -31,7 +32,7 @@
                     <h1>EUA</h1>
                 </div>
             </div>
-            <div class="card three">
+            <div class="card three" data-tilt>
                 <img class="image" src="./assets/img/photo-3.jpg" alt="Brazil">
                 <div class="card-content">
                     <span>Travel</span>
@@ -40,7 +41,9 @@
             </div>
         </div>
     </div>
-    <script src="./main.js"></script>
+
+
+    <script src="./assets/js/vanilla-tilt.js"></script>
 </body>
 
 </html>

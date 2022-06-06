@@ -8,7 +8,7 @@
 }
 
 :root {
-    --background-color: #14213d;
+    --background-color: #e5e5e5;
     --white-color: #fff;
     --h3-color: #212529;
     --span-color: #343a40;
@@ -33,14 +33,6 @@ body {
     align-items: center;
 }
 
-video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-}
-
 .cards {
     display: flex;
     flex-wrap: wrap;
@@ -50,7 +42,7 @@ video {
 .card {
     height: 300px;
     width: 200px;
-    margin: 0 3rem;
+    margin: 1rem 3rem;
     border-radius: 0.6rem;
 }
 
@@ -148,4 +140,10 @@ video {
 .card.three:hover .card-content {
     opacity: 1;
     transition: 0.5s ease;
+}
+
+@media screen and (max-width:688px) {
+    .card {
+        width: 60%;
+    }
 }
